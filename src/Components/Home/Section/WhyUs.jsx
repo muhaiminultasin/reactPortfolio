@@ -21,8 +21,8 @@ const WhyUs = () => {
             <div className='mt-5 col-span-4'>
                 <ul>
                     {
-                        list.map( ({text}) => {
-                            return <li className='flex gap-4 mt-5  items-center'><FaCheck className='w-[30px] text-primary'></FaCheck> {text}</li>
+                        list.map( ({text},i) => {
+                            return <li key={i} className='flex gap-4 mt-5  items-center'><FaCheck className='w-[30px] text-primary'></FaCheck> {text}</li>
                         })
                     }
                 </ul>
