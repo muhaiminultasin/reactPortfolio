@@ -1,5 +1,6 @@
 import { FaCheck } from 'react-icons/fa';
 import React from 'react'
+import SectionTitle from "../../Common/SectionTitle"
 
 const WhyUs = () => {
 
@@ -14,15 +15,16 @@ const WhyUs = () => {
   return (
     <section className='px-[20px] md:px-[80px]  items-center pb-[80px] '>
 
-        <h1 className='text-[40px] text-primary text-center'>Benefits From Us</h1>
-        <p className='font-[300] text-center'>We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript.</p>
+        <SectionTitle title={"Benefits From Us"}/>
+        
+        <p className='font-[300] text-secondary'>We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript.</p>
         <div className='grid row grid-cols-1 md:grid-cols-2 gap-10 mt-10 items-center'>
         <div>
             <div className='mt-5 col-span-4'>
                 <ul>
                     {
                         list.map( ({text},i) => {
-                            return <li key={i} className='flex gap-4 mt-5  items-center'><FaCheck className='w-[30px] text-primary'></FaCheck> {text}</li>
+                            return <li key={i} className='flex gap-4 mt-5  items-center text-secondary'><FaCheck className='w-[30px] text-primary'></FaCheck> {text}</li>
                         })
                     }
                 </ul>

@@ -1,15 +1,23 @@
 import React from 'react'
-import Button from "../../Common/Button";
+import FindMe from '../../Common/FindMe';
 
 const Hero = () => {
   return (
-    <section className='px-[80px] pt-[140px] pb-[20px] text-center'>
-      <h1 className="text-[70px] font-[900] text-primary text-center">Web Solutions</h1>
-      <h1 className="text-[30px] font-[700] text-white max-w-[650px] mx-auto mt-5 leading-[40px]">Front-End Development, Crafting Modern & Responsive Web Solutions.</h1>
-      
-      <div className="flex gap-5 w-fit mx-auto">
-      <Button name={"View My Work"} className={""} />
-      <Button name={"Contact Me"} className={""} />
+    <section className='px-[20px] md:px-[80px] pt-[140px] pb-[20px] grid grid-cols-1 md:grid-cols-2'>
+      <div>
+        <p className="text-base font-[300] text-white">Hi, I'm </p>
+        <h1 className='text-primary text-[40px] font-[700] leadin'>TASIN MUHAIMINUL</h1>
+        <h1 className="text-[30px] font-[500] text-white max-w-[650px] leading-[40px]">Front-End Developer</h1>
+        <p className='text-secondary mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ut doloremque minima. Reprehenderit cumque, quas fugit in alias dolorem dolor, iste vero distinctio atque, eveniet temporibus ducimus cum explicabo ex.</p>
+
+        <div className="mt-28 grid grid-cols-1 md:grid-cols-2">
+          <FindMe/>
+        </div>
+        
+
+      </div>
+      <div>
+
       </div>
     </section>
   )

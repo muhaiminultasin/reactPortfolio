@@ -11,9 +11,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#F9E79F", 
-        Peragraph: "gray-300", 
+        primary: "#FF014D", 
+        secondary:"#C4CFDE",
+        white: "#FFFFFF", 
+        darkPrimary:"#1F2125",
+        darkSecondary:"#212428"
       },
+
+      boxShadow:{
+        'custom-dark': '0 7px 10px rgba(0, 0, 0, 0.8)',
+      }
     },
   },
   darkMode: "class",

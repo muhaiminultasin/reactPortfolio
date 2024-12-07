@@ -6,7 +6,7 @@ const Buttons = ({ name, className }) => {
   return (
     <div>
       <Button className={cn(
-          "px-3 py-1 bg-transparent border-2 border-[#F9E79F] rounded-lg font-semibold text-[#F9E79F] mt-5",
+          "px-3 py-1 bg-darkPrimary shadow-custom-dark text-secondary mt-5",
           className
         )}>{name}</Button>
     </div>
