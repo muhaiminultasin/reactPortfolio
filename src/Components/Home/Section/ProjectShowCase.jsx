@@ -20,9 +20,9 @@ const ProjectShowCase = () => {
     },
   ]
   return (
-    <section className='py-[100px] px-[20px] md:px-[80px] text-center'>
+    <section className='py-[100px] px-[20px] md:px-[50px] lg:px-[80px] text-center'>
       <SectionTitle title={"My Portfolio"} subTitle={"VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"}/>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 text-start'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 text-start'>
         {
           Projects.map(({img,title,type},i)=>{
             return <div key={i} className='bg-darkPrimary shadow-custom-dark p-5 rounded-xl'>

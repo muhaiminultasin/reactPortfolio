@@ -3,7 +3,7 @@ import FindMe from '../../Common/FindMe';
 
 const Hero = () => {
   return (
-    <section className='px-[20px] md:px-[80px] pt-[140px] pb-[20px] grid grid-cols-1 md:grid-cols-2'>
+    <section className='px-[20px] md:px-[50px] lg:px-[80px] pt-[140px] pb-[20px] grid grid-cols-1 md:grid-cols-1'>
       <div>
         <p className="text-base font-[300] text-white">Hi, I'm </p>
         <h1 className='text-primary text-[40px] font-[700] leadin'>TASIN MUHAIMINUL</h1>

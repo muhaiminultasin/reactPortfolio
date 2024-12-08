@@ -13,12 +13,12 @@ const WhyUs = () => {
     ]
 
   return (
-    <section className='px-[20px] md:px-[80px]  items-center pb-[80px] '>
+    <section className='px-[20px] md:px-[50px] lg:px-[80px]  items-center pb-[80px] '>
 
         <SectionTitle title={"Benefits From Us"}/>
         
         <p className='font-[300] text-secondary'>We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript.</p>
-        <div className='grid row grid-cols-1 md:grid-cols-2 gap-10 mt-10 items-center'>
+        <div className='grid row grid-cols-1 lg:grid-cols-2 gap-10 mt-10 items-center'>
         <div>
             <div className='mt-5 col-span-4'>
                 <ul>
@@ -31,8 +31,8 @@ const WhyUs = () => {
             </div>
         </div>
 
-        <div className='rounded-lg overflow-hidden'>
-            <video controls muted width="600">
+        <div className=' overflow-hidden '>
+            <video controls muted width="600" className='mx-auto rounded-lg'>
                 <source src='/Vedio/Vedio1.mp4' type='video/mp4'/>
             </video>
         </div>

@@ -5,6 +5,7 @@ import Services from "./Section/Services";
 import WhyUs from "./Section/WhyUs";
 import Banner from "./Section/Banner";
 import ProjectShowCase from "./Section/ProjectShowCase";
+import Contact from "./Section/Contact";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <WhyUs/>
       <Banner/>
       <ProjectShowCase/>
+      <Contact/>
     </div>
   );
 };

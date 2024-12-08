@@ -18,12 +18,12 @@ const FindMe = () => {
     ]
 
   return (
-    <div>
+    <div className='mt-5 mb-0'>
         <p className='text-secondary text-[14px]'>FIND ME WITH</p>
         <div className='flex gap-5 mt-5'>
             {
-                icons.map( ({img}) => {
-                    return <div className='bg-darkPrimary w-[50px] h-[40px] flex justify-center items-center shadow-custom-dark'>
+                icons.map( ({img},i) => {
+                    return <div key={i} className='bg-darkPrimary w-[50px] h-[40px] flex justify-center items-center shadow-custom-dark'>
                     <a href="">
                     <div>
                         {img}
