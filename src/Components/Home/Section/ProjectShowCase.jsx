@@ -25,9 +25,9 @@ const ProjectShowCase = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 text-start'>
         {
           Projects.map(({img,title,type},i)=>{
-            return <div key={i} className='bg-darkPrimary shadow-custom-dark p-5 rounded-xl hover:shadow-lg transition-all deration-300'>
+            return <div key={i} className='bg-darkPrimary shadow-custom-dark p-5 rounded-xl hover:shadow-lg transition-all deration-300 text-secondary hover:text-primary'>
             <img src={img} alt="" className='rounded-md'/>
-            <div className='mt-5 text-secondary'>
+            <div className='mt-5 '>
               <h1 className='font-[300]'>{title}</h1>
               <p>{type} </p>
             </div>

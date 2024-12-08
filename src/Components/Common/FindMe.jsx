@@ -6,14 +6,14 @@ const FindMe = () => {
 
     const icons = [
         {
-            img: <FaFacebookF />,
+            img: <FaFacebookF className='text-primary'/>,
             href:""
         },
         {
-            img: <FaInstagram />,
+            img: <FaInstagram className='text-primary'/>,
         },
         {
-            img: <FaLinkedinIn />,
+            img: <FaLinkedinIn className='text-primary'/>,
         },
     ]
 
