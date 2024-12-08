@@ -9,7 +9,7 @@ import Contact from "./Section/Contact";
 
 const Home = () => {
   return (
-    <div className='text-white bg-local'>
+    <div className='text-white cursor-default'>
       <Hero/>
       <ServicesConent/>
       <Services/>

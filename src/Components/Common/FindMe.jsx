@@ -23,7 +23,7 @@ const FindMe = () => {
         <div className='flex gap-5 mt-5'>
             {
                 icons.map( ({img},i) => {
-                    return <div key={i} className='bg-darkPrimary w-[50px] h-[40px] flex justify-center items-center shadow-custom-dark'>
+                    return <div key={i} className='bg-darkPrimary w-[50px] h-[40px] flex justify-center items-center shadow-custom-dark hover:shadow-lg cursor-pointer transition-all duration-300'>
                     <a href="">
                     <div>
                         {img}

@@ -15,7 +15,8 @@ export default {
         secondary:"#C4CFDE",
         white: "#FFFFFF", 
         darkPrimary:"#1F2125",
-        darkSecondary:"#212428"
+        darkSecondary:"#212428",
+        formDark:"#191B1E",
       },
 
       boxShadow:{

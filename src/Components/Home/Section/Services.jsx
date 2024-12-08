@@ -30,7 +30,7 @@ const Services = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 mt-5'>
         {services.map( ({img,title,desc},i) => {
-            return <div key={i} className=' max-w-[400px] max-h-[400px] bg-darkPrimary shadow-custom-dark p-5 rounded-lg mt-5 mx-auto md:mx-0'>
+            return <div key={i} className=' max-w-[400px] max-h-[400px] bg-darkPrimary shadow-custom-dark p-5 rounded-lg mt-5 mx-auto md:mx-0 hover:shadow-lg transition-all duration-300 '>
               <div>{img}</div>
                     <h1 className='text-[25px] font-[500] '>{title}</h1>
                     <p className='font-[300] text-secondary mt-5'>{desc}</p>
