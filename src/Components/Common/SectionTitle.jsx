@@ -1,10 +1,11 @@
 import React from 'react'
+import cn from '../../../assets/cn/Cn'
 
-const SectionTitle = ({title,subTitle}) => {
+const SectionTitle = ({title,subTitle,titleClass, subTitleClass,className}) => {
   return (
-    <div>
-      <p className='text-[14px] text-primary'>{subTitle}</p>
-      <h1 className='text-[40px] text-secondary font-[600]'>{title}</h1>
+    <div className={cn("flex flex-col", className)}>
+      <p className={cn("text-[14px] text-primary",subTitleClass)}>{subTitle}</p>
+      <h1 className={cn("text-[40px] text-secondary font-[600]",titleClass )}>{title}</h1>
     </div>
   )
 }

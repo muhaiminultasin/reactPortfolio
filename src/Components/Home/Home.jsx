@@ -6,6 +6,7 @@ import WhyUs from "./Section/WhyUs";
 import Banner from "./Section/Banner";
 import ProjectShowCase from "./Section/ProjectShowCase";
 import Contact from "./Section/Contact";
+import Footer from "./Section/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Banner/>
       <ProjectShowCase/>
       <Contact/>
+      <Footer/>
     </div>
   );
 };
