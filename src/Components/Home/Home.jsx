@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Hero from "./Section/Hero";
 import ServicesConent from "./Section/ServicesConent";
 import Services from "./Section/Services";
@@ -9,15 +9,26 @@ import Contact from "./Section/Contact";
 import Footer from "./Section/Footer";
 
 const Home = () => {
+
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+  
   return (
     <div className='text-white cursor-default'>
       <Hero/>
       <ServicesConent/>
       <Services/>
       <WhyUs/>
-      <Banner/>
+      <Banner onContactClick={scrollToContact}/>
       <ProjectShowCase/>
-      <Contact/>
+      <Contact ref={contactRef}/>
       <Footer/>
     </div>
   );
