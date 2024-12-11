@@ -1,4 +1,4 @@
-import React, {forwardRef, useRef} from 'react';
+import React, {forwardRef, useRef,useState} from 'react';
 import SectionTitle from '../../Common/SectionTitle';
 import FindMe from '../../Common/FindMe';
 import Buttons from '../../Common/Button';
@@ -8,19 +8,26 @@ const Contact = forwardRef(
   (props, ref) => {
 
     const form = useRef();
+    const [notification, setNotification] = useState("");
+
     const sendEmail = (e) => {
       e.preventDefault();
 
       emailjs.sendForm("service_ipfiohq", "template_sv31x7k", form.current, {
         publicKey:"s3ImfKNeHWXnM9-Rm",
       }).then(
-        () => {
-          console.log("SUCCESS")
-        } ,
+        setTimeout(() => {
+          setNotification("Email sent successfully");
+          if(form.current) {
+            form.current.reset();
+          }
+        },1000) ,
         (error) => {
           console.log("FAILED....", error.text)
         }
-      )
+      );
+
+      
     }
 
     return (
@@ -42,7 +49,7 @@ const Contact = forwardRef(
               </div>
   
               <div className=' bg-darkPrimary shadow-custom-dark  p-5 rounded-md '>
-                  <form action="" ref={form} onSubmit={sendEmail}>
+                  <form action="" ref={form} >
                     
                     <div className='flex flex-col text-secondary'>
                       <label htmlFor="name" className='mt-4'>Name:</label>
@@ -58,14 +65,20 @@ const Contact = forwardRef(
   
                       <label htmlFor="message" className='mt-4'>Message</label>
                       <textarea name="message" id="message"  className='bg-formDark py-1 px-4 outline-none border-black border-[2px] rounded-md mt-2 min-h-[120px]'></textarea>
-                      <input type="submit" name='send' value={"send"}/>
+                      
                     </div>
+                  {
+                    notification && (
+                      <p className='text-primary text-[14px] mt-3'>{notification}</p>
+                    )
+                  }
   
-                    <div  className='  md:mt-10 mt-5'>
-                      <Buttons name={"Send Message"} className='text-primary ' />
+                    <div  className='  md:mt-6 mt-5'>
+                      <Buttons name={"Send Message"} className='text-primary' onClick={sendEmail}/>
                     </div>
   
                   </form>
+
               </div>
         </div>
       </section>
