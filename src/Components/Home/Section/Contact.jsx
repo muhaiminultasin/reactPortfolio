@@ -71,7 +71,7 @@ const Contact = forwardRef(
                   <p className='text-secondary text-[14px] mt-5'>Phone: <span>01824427215</span></p>
                   <p className='text-secondary text-[14px]'>Whatsapp: <span>01794382332</span></p>
                   <p className='text-secondary text-[14px] mt-5'>Email: <span>tasinmuhaiminul@gmail.com</span></p>
-                  <FindMe/>
+                  <div className='mt-10'><FindMe/></div>
               </div>
   
               <div className=' bg-darkPrimary shadow-custom-dark  p-5 rounded-md '>
