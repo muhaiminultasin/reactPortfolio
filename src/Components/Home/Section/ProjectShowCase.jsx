@@ -9,7 +9,7 @@ const ProjectShowCase = () => {
 
   useEffect( () => {
     const context = gsap.context( () => {
-      gsap.from(portFolioRef.current.querySelectorAll("p, h1, #intro, #items"), {
+      gsap.from(portFolioRef.current.querySelectorAll("#intro, #items"), {
         x:100,
         duration:0.5,
         opacity:0,
@@ -52,10 +52,10 @@ const ProjectShowCase = () => {
       <div id="intro">
       <SectionTitle title={"My Portfolio"} subTitle={"VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"}/>
       </div>
-      <div id='items' className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 text-start'>
+      <div id='items'  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 text-start'>
         {
           Projects.map(({img,title,type},i)=>{
-            return <div   key={i} className=' bg-darkPrimary shadow-custom-dark p-5 rounded-xl hover:shadow-lg transition-all deration-300 text-secondary hover:text-primary'>
+            return <div   key={i} className=' content bg-darkPrimary shadow-custom-dark p-5 rounded-xl hover:shadow-lg transition-all deration-300 text-secondary hover:text-primary'>
             <img src={img} alt="" className='rounded-md'/>
             <div className='mt-5 '>
               <h1 className='font-[300]'>{title}</h1>
