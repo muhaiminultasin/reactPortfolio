@@ -28,9 +28,11 @@ const Hero = () => {
         <p className="text-base font-[300] text-white">Hi, I'm </p>
         <h1 className='text-primary text-[40px] font-[700] leadin'>TASIN MUHAIMINUL</h1>
         <h1 className="text-[30px] font-[500] text-white max-w-[650px] leading-[40px]">Front-End Developer</h1>
-        <p className='text-secondary mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ut doloremque minima. Reprehenderit cumque, quas fugit in alias dolorem dolor, iste vero distinctio atque, eveniet temporibus ducimus cum explicabo ex.</p>
+        <p className='text-secondary mt-5'>As a confident front-end developer, I craft stunning web interfaces that engage users. Proficient in HTML, CSS, Tailwind, and Bootstrap, I create responsive layouts with ease. 
 
-        <div className=" mt-10 md:mt-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ">
+I use JavaScript, ReactJS, and NextJS to build dynamic web applications, enhanced by smooth animations from GSAP and Framer Motion. I'm committed to transforming your ideas into standout digital experiences that drive success.</p>
+
+        <div className=" mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ">
           <FindMe/>
           <SkillOn/>
         </div>

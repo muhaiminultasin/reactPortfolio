@@ -18,7 +18,7 @@ const SkillOn = () => {
     ]
 
   return (
-    <div className='mt-5 mb-0'>
+    <div className=' mb-0'>
         <p className='text-secondary text-[14px] text-center md:text-start'>SKILLED ON</p>
         <div className='flex gap-5 mt-5 w-fit md:w-full  mx-auto md:mx-0'>
             {

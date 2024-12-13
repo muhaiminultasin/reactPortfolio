@@ -30,17 +30,17 @@ const WhyUs = () => {
     }, []);
 
     const list = [
-        {text:"We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript"},
-        {text:"Focus on building user-friendly, responsive, and visually appealing designs."},
+        {text:"I focus on every detail to ensure your website is visually appealing and user-friendly."},
+        {text:"Free domain for one year"},
         {text:"Fast load times and performance optimization for a smooth user experience."},
         {text:"Collaborative approach, working closely with teams and clients to understand their needs."},
-        {text:"Proven track record of delivering projects on time and within budget."},
+        {text:"I have a track record of not just meeting deadlines, but exceeding expectations while staying within budget."},
     ]
 
   return (
     <section ref={benefitsRef} className='px-[20px] md:px-[50px] lg:px-[80px]  items-center pb-[80px] '>
 
-        <SectionTitle title={"Benefits From Us"}/>
+        <SectionTitle title={"Why Choose Me"}/>
         
         <p className='font-[300] text-secondary'>We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript.</p>
         <div className='grid row grid-cols-1 lg:grid-cols-2 gap-10 mt-10 items-center'>

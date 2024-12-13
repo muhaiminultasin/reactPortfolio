@@ -35,17 +35,17 @@ const Services = () => {
         {
             img:<AiOutlineProfile className='text-primary my-3 text-[30px]'/>,
             title:"Personal Portfolio ",
-            desc:"Professional Landing Page Design and Development Services. Whether you have a Figma or PSD design, we will meticeeds.",
+            desc:"Transform Your Personal Portfolio with Expert Design and Development Services! Whether you have a stunning Figma layout or a polished PSD design, we are here to bring your vision to life. Let's create something extraordinary together!",
         },
         {
             img:<IoBookSharp className='text-primary my-3 text-[30px]'/>,
-            title:"Landing Page ",
-            desc:"Professional Landy transform it into a functional and visually appealing landing page. If you don’t have a design ready, we’ll take care of creating a custom, professional design based to your needs.",
+            title:"Landing Pages ",
+            desc:"Professional Landy specializes in designing effective and visually appealing landing pages. If you don't have a design, we can create a custom solution tailored to your needs.",
         },
         {
             img:<GiCompanionCube className='text-primary my-3 text-[30px]'/>            ,
-            title:"Agency Website ",
-            desc:"Professional Landing Page Design and Development Services. Whether you have a Figma or PSD design, we will meticulously transform it into a functional and visually appealing landing page. If you don’t haneeds.",
+            title:"Agency Websites ",
+            desc:"I specialize in designing modern agency websites that engage audiences and strengthen brand identity. By utilizing responsive layouts and seamless animations, I ensure an exceptional user experience.",
         },
     ]
 

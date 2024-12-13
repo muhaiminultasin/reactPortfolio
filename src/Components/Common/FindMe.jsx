@@ -18,7 +18,7 @@ const FindMe = () => {
     ]
 
   return (
-    <div className='mt-5 mb-0 opacity-1'>
+    <div className=' mb-0 opacity-1'>
         <p className='text-secondary text-[14px] text-center md:text-start'>FIND ME WITH</p>
         <div className='flex w-fit md:w-full  mx-auto md:mx-0 gap-5 mt-5'>
             {
