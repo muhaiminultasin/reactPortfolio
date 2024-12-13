@@ -1,10 +1,35 @@
-import React from 'react'
+import {React, useEffect, useRef} from 'react'
+import {gsap} from "gsap"
 import { AiOutlineProfile } from "react-icons/ai";
 import { IoBookSharp } from "react-icons/io5";
 import { GiCompanionCube } from "react-icons/gi";
 import SectionTitle from '../../Common/SectionTitle'
 
 const Services = () => {
+
+  const  servicesRef = useRef();
+
+  useEffect(() => {
+    const context = gsap.context(() => {
+        gsap.from(servicesRef.current.querySelectorAll("h1,p,#items"), {
+          x:100,
+          duration:0.5,
+          opacity:0,
+          scrollTrigger:{
+            trigger:servicesRef.current,
+            start:"top 70%",
+            end:"top 40%",
+            scrub:2,
+          },
+          stagger:{
+            each:0.2,
+          },
+
+        });
+    }, servicesRef);
+
+    return () => context.revert(); 
+}, []);
 
     const services = [
         {
@@ -25,12 +50,12 @@ const Services = () => {
     ]
 
   return (
-    <section className='px-[20px] md:px-[50px] lg:px-[80px] pb-[100px]'>
-      <SectionTitle title={"What I Do"} subTitle={"FEATURES"}/>
+    <section id='services' ref={servicesRef} className='px-[20px] md:px-[50px] lg:px-[80px] pb-[100px]'>
+      <SectionTitle  title={"What I Do"} subTitle={"FEATURES"}/>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 mt-5'>
+      <div id='items' className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 mt-5'>
         {services.map( ({img,title,desc},i) => {
-            return <div key={i} className=' max-w-[400px] max-h-[400px] bg-darkPrimary shadow-custom-dark p-5 rounded-lg mt-5 mx-auto md:mx-0 hover:shadow-lg transition-all duration-300 '>
+            return <div id='item'  key={i} className=' max-w-[400px] max-h-[400px] bg-darkPrimary shadow-custom-dark p-5 rounded-lg mt-5 mx-auto md:mx-0 hover:shadow-lg transition-all duration-300 '>
               <div>{img}</div>
                     <h1 className='text-[25px] font-[500] '>{title}</h1>
                     <p className='font-[300] text-secondary mt-5'>{desc}</p>

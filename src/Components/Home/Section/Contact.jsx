@@ -1,11 +1,37 @@
-import React, {forwardRef, useRef,useState} from 'react';
+import React, {forwardRef, useRef,useState,useEffect} from 'react';
+import {gsap} from "gsap"
 import SectionTitle from '../../Common/SectionTitle';
 import FindMe from '../../Common/FindMe';
 import Buttons from '../../Common/Button';
 import emailjs from '@emailjs/browser';
 
 const Contact = forwardRef(
+  
   (props, ref) => {
+
+    const  contactRef = useRef();
+
+    useEffect(() => {
+        const context = gsap.context(() => {
+            gsap.from(contactRef.current.querySelectorAll("h1,p,#content, #contentImage"), {
+              x:100,
+              duration:0.5,
+              opacity:0,
+              scrollTrigger:{
+                trigger:contactRef.current,
+                start:"top 70%",
+                end:"top 40%",
+                scrub:2,
+              },
+              stagger:{
+                each:0.2,
+              },
+    
+            });
+        }, contactRef);
+    
+        return () => context.revert(); 
+    }, []);
 
     const form = useRef();
     const [notification, setNotification] = useState("");
@@ -34,7 +60,7 @@ const Contact = forwardRef(
       <section ref={ref}  className='px-[20px] md:px-[50px] lg:px-[80px]  text-center pb-[100px]'>
         <SectionTitle title={"Contact Me"} subTitle={"CONTACT"}/>
   
-        <div className='lg:w-[80%] mx-auto text-start grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:gap-10   mt-10'>
+        <div ref={contactRef} className='lg:w-[80%] mx-auto text-start grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:gap-10   mt-10'>
               <div className=' bg-darkPrimary shadow-custom-dark  lg:max-w-[400px] p-5 rounded-md'>
                   <img src="img/handshake.jpg" className='rounded-sm h-[30%] w-full mx-auto '  alt="" />
   

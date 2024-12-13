@@ -1,8 +1,33 @@
+import {React, useEffect, useRef} from 'react'
+import {gsap} from "gsap"
 import { FaCheck } from 'react-icons/fa';
-import React from 'react'
 import SectionTitle from "../../Common/SectionTitle"
 
 const WhyUs = () => {
+
+    const  benefitsRef = useRef();
+
+    useEffect(() => {
+        const context = gsap.context(() => {
+            gsap.from(benefitsRef.current.querySelectorAll("h1,p,#content, #contentImage"), {
+              x:100,
+              duration:0.5,
+              opacity:0,
+              scrollTrigger:{
+                trigger:benefitsRef.current,
+                start:"top 70%",
+                end:"top 40%",
+                scrub:2,
+              },
+              stagger:{
+                each:0.2,
+              },
+    
+            });
+        }, benefitsRef);
+    
+        return () => context.revert(); 
+    }, []);
 
     const list = [
         {text:"We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript"},
@@ -13,13 +38,13 @@ const WhyUs = () => {
     ]
 
   return (
-    <section className='px-[20px] md:px-[50px] lg:px-[80px]  items-center pb-[80px] '>
+    <section ref={benefitsRef} className='px-[20px] md:px-[50px] lg:px-[80px]  items-center pb-[80px] '>
 
         <SectionTitle title={"Benefits From Us"}/>
         
         <p className='font-[300] text-secondary'>We excel at creating responsive, visually stunning, and user-friendly interfaces using cutting-edge technologies like React, CSS frameworks, and JavaScript.</p>
         <div className='grid row grid-cols-1 lg:grid-cols-2 gap-10 mt-10 items-center'>
-        <div>
+        <div id='content'>
             <div className='mt-5 col-span-4'>
                 <ul>
                     {
@@ -31,7 +56,7 @@ const WhyUs = () => {
             </div>
         </div>
 
-        <div className=' overflow-hidden '>
+        <div id='contentImage' className=' overflow-hidden '>
             <video controls muted width="600" className='mx-auto rounded-lg'>
                 <source src='/Vedio/Vedio1.mp4' type='video/mp4'/>
             </video>

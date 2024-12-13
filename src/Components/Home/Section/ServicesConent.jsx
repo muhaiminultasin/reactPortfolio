@@ -17,9 +17,11 @@ const ServicesConent = () => {
           trigger:ServicesConentRef.current,
           start:"top 70%",
           end:"top 40%",
-          markers:true,
           scrub:2,
-        }
+        },
+        stagger:{
+          each:0.2,
+        },
       })
     },ServicesConentRef );
 
