@@ -13,13 +13,10 @@ const Services = () => {
     const context = gsap.context(() => {
         gsap.from(servicesRef.current.querySelectorAll("h1,p,#items"), {
           x:100,
-          duration:0.5,
           opacity:0,
           scrollTrigger:{
             trigger:servicesRef.current,
-            start:"top 70%",
-            end:"top 40%",
-            scrub:2,
+            
           },
           stagger:{
             each:0.2,

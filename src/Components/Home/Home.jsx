@@ -21,7 +21,7 @@ const Home = () => {
   };
   
   return (
-    <div className='text-white cursor-default'>
+    <div className=' overflow-y-hidden text-white cursor-default'>
       <Hero/>
       <ServicesConent/>
       <Services/>

@@ -15,9 +15,6 @@ const ProjectShowCase = () => {
         opacity:0,
         scrollTrigger:{
           trigger:portFolioRef.current,
-          start:"top 70%",
-          end:"top 40%",
-          scrub:2,
         },
         stagger:{
           each:0.2,
