@@ -25,7 +25,7 @@ const Hero = () => {
     <section
       id="hero"
       ref={heroRef}
-      className="w-screen px-[20px] md:px-[50px] lg:px-[80px] pt-[100px]  xl:pt-[160px] pb-[20px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2"
+      className="w-screen px-[20px] md:px-[50px] lg:px-[80px] pt-[100px]  xl:pt-[160px] pb-[20px] grid grid-cols-1 lg:grid-cols-2"
     >
       <div>
         <p className="text-base font-[300]  text-white">Hi, I'm </p>
@@ -49,7 +49,9 @@ const Hero = () => {
           <SkillOn />
         </div>
       </div>
-      <div></div>
+      <div>
+
+      </div>
     </section>
   );
 };
