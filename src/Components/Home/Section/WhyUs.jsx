@@ -54,8 +54,8 @@ const WhyUs = () => {
         </div>
 
         <div id='contentImage' className=' overflow-hidden '>
-            <video controls muted width="600" className='mx-auto rounded-lg'>
-                <source src='/Vedio/Vedio1.mp4' type='video/mp4'/>
+            <video controls muted width="600" autoPlay className='mx-auto rounded-lg'>
+                <source src='/Vedio/Vedio1.mp4' type='video/mp4' />
             </video>
         </div>
         </div>
