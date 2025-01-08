@@ -7,6 +7,7 @@ import WhyUs from "./Section/WhyUs";
 import Banner from "./Section/Banner";
 import Contact from "./Section/Contact";
 import Footer from "./Section/Footer";
+import ExpertiseSection from "./Section/ExpertiseSection";
 
 const Home = () => {
 
@@ -28,6 +29,7 @@ const Home = () => {
       <Services/>
       <WhyUs/>
       <Banner onContactClick={scrollToContact}/>
+      {/* <ExpertiseSection/> */}
       <Contact ref={contactRef}/>
       <Footer/>
     </section>

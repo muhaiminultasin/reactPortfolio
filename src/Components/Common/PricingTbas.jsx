@@ -20,8 +20,9 @@ export default function PricingTbas() {
   ];
 
   return (
-    <div className="flex w-full flex-col mt-5">
-      <Tabs aria-label="Dynamic tabs" items={tabs}>
+    <section className="w-full">
+        <div className="flex  mx-auto flex-col mt-5 ">
+      <Tabs aria-label="Dynamic tabs" items={tabs} className="mx-auto">
         {(item) => (
           <Tab key={item.id} title={item.label}>
             <Card>
@@ -31,5 +32,6 @@ export default function PricingTbas() {
         )}
       </Tabs>
     </div>
+    </section>
   );
 }
