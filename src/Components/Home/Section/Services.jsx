@@ -32,7 +32,8 @@ const Services = () => {
         {
             img:<AiOutlineProfile className='text-primary my-3 text-[30px]'/>,
             title:"Personal Portfolio ",
-            desc:"Transform Your Personal Portfolio with Expert Design and Development Services! Whether you have a stunning Figma layout or a polished PSD design, we are here to bring your vision to life. Let's create something extraordinary together!",
+            desc:"Transform Your Personal Portfolio with Expert Design and Development Services! Whether you have a stunning Figma layout or a polished PSD design, we are here to bring your vision to life. Let's create something extraordinary together! ",
+            
         },
         {
             img:<IoBookSharp className='text-primary my-3 text-[30px]'/>,
@@ -41,18 +42,18 @@ const Services = () => {
         },
         {
             img:<GiCompanionCube className='text-primary my-3 text-[30px]'/>            ,
-            title:"Agency Websites ",
-            desc:"I specialize in designing modern agency websites that engage audiences and strengthen brand identity. By utilizing responsive layouts and seamless animations, I ensure an exceptional user experience.",
+            title:"React Js based single page applications",
+            desc:"React JS-based single-page applications (SPAs) are dynamic web applications that load a single HTML file and update content on the fly. They offer a fast, interactive user experience by utilizing reusable components and efficient state management, mimicking the feel of native apps.",
         },
     ]
 
   return (
-    <section id='services' ref={servicesRef} className='px-[20px] md:px-[50px] lg:px-[80px] pb-[100px]'>
+    <section id='services' ref={servicesRef} className='px-[20px] md:px-[50px] lg:px-[80px] '>
       <SectionTitle  title={"What I Do"} subTitle={"FEATURES"}/>
 
       <div id='items' className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 mt-5'>
         {services.map( ({img,title,desc},i) => {
-            return <div id='item'  key={i} className=' max-w-[400px] max-h-[400px] bg-darkPrimary shadow-custom-dark p-5 rounded-lg mt-5 mx-auto md:mx-0 hover:shadow-lg transition-all duration-300 '>
+            return <div id='item'  key={i} className=' max-w-[400px] h-auto bg-darkPrimary shadow-custom-dark p-5 rounded-lg mt-5 mx-auto md:mx-0 hover:shadow-lg transition-all duration-300 '>
               <div>{img}</div>
                     <h1 className='text-[25px] font-[500] '>{title}</h1>
                     <p className='font-[300] text-secondary mt-5'>{desc}</p>

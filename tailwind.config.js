@@ -17,6 +17,7 @@ export default {
         darkPrimary:"#1F2125",
         darkSecondary:"#212428",
         formDark:"#191B1E",
+        tabsBg: '#3f3f46',
       },
 
       boxShadow:{

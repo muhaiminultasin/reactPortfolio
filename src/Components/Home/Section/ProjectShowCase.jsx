@@ -46,7 +46,7 @@ const ProjectShowCase = () => {
     },
   ]
   return (
-    <section ref={portFolioRef} className='py-[100px] px-[20px] md:px-[50px] lg:px-[80px] text-center'>
+    <section ref={portFolioRef} className=' px-[20px] md:px-[50px] lg:px-[80px] text-center'>
       <div id="intro">
       <SectionTitle title={"My Portfolio"} subTitle={"VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"}/>
       </div>

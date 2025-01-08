@@ -2,6 +2,7 @@ import { React, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import FindMe from "../../Common/FindMe";
 import SkillOn from "../../Common/SkillOn";
+import Buttons from "../../Common/Button";
 
 const Hero = () => {
   const heroRef = useRef();
@@ -32,8 +33,8 @@ const Hero = () => {
         <h1 className="text-primary text-[40px] font-[700] leadin">
           TASIN MUHAIMINUL
         </h1>
-        <h1 className=" font-[500] text-[30px] text-white max-w-[650px] lg:max-w-[900px] xl:max-w-[1100px] leading-[40px]">
-          Front-End Developer
+        <h1 className="font-[500] text-[30px] text-white max-w-[650px] lg:max-w-[900px] xl:max-w-[1100px] leading-[40px]">
+            Front-end website developer with React.js 
         </h1>
         <p className="text-secondary mt-5">
           As a confident front-end developer, I craft stunning web interfaces
@@ -44,9 +45,12 @@ const Hero = () => {
           your ideas into standout digital experiences that drive success.
         </p>
 
-        <div className=" mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 ">
+       
+
+        <div className=" mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 items-end">
           <FindMe />
-          <SkillOn />
+          <Buttons name={"View My Work"} className='text-primary' onClick={""}/>
+          
         </div>
       </div>
       <div>

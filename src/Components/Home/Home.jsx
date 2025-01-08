@@ -1,10 +1,10 @@
 import React, {useRef} from "react";
 import Hero from "./Section/Hero";
+import ProjectShowCase from "./Section/ProjectShowCase";
 import ServicesConent from "./Section/ServicesConent";
 import Services from "./Section/Services";
 import WhyUs from "./Section/WhyUs";
 import Banner from "./Section/Banner";
-import ProjectShowCase from "./Section/ProjectShowCase";
 import Contact from "./Section/Contact";
 import Footer from "./Section/Footer";
 
@@ -21,16 +21,16 @@ const Home = () => {
   };
   
   return (
-    <div className=' overflow-y-hidden text-white cursor-default'>
+    <section className=' overflow-y-hidden space-y-[100px] text-white cursor-default'>
       <Hero/>
+      <ProjectShowCase/>
       <ServicesConent/>
       <Services/>
       <WhyUs/>
       <Banner onContactClick={scrollToContact}/>
-      <ProjectShowCase/>
       <Contact ref={contactRef}/>
       <Footer/>
-    </div>
+    </section>
   );
 };
 
