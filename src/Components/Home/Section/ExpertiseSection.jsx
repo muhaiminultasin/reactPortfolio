@@ -16,6 +16,14 @@ const skills = [
 const ExpertiseSection = () => {
   return (
     <section className="flex flex-col lg:flex-row gap-10">
+      {/* Pricing Tabs Section */}
+      <div className="lg:w-1/2 px-4 py-10 md:px-12">
+      <h2 className=" text-secondary text-center lg:text-start font-semibold text-[25px] md:text-[36px]">
+          Pricing and Values
+        </h2>
+        <PricingTbas />
+      </div>
+      
       {/* Expertise Section */}
       <div className="flex flex-col justify-center gap-10 px-4 py-10 md:px-12 lg:w-1/2">
         <h2 className=" text-secondary text-center lg:text-start font-semibold text-[25px] md:text-[36px]">
@@ -40,13 +48,6 @@ const ExpertiseSection = () => {
         </div>
       </div>
 
-      {/* Pricing Tabs Section */}
-      <div className="lg:w-1/2 px-4 py-10 md:px-12">
-      <h2 className=" text-secondary text-center lg:text-start font-semibold text-[25px] md:text-[36px]">
-          Pricing and Values
-        </h2>
-        <PricingTbas />
-      </div>
     </section>
   );
 };

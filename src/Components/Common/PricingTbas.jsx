@@ -1,21 +1,41 @@
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+import { FaCheck } from 'react-icons/fa';
 
 export default function PricingTbas() {
   let tabs = [
     {
       id: "1-3",
       label: "1-3 pages",
-      content:"5999 - 9999 tk"
+      price: "5999 - 9999 tk",
+      offer:[
+        {
+          text: "Free Hosting Setup: We offer assistance in setting up hosting for your website."
+        },
+        {
+          text: "One Free Revision: Allow one round of edits at no additional cost."
+        },
+        {
+          text: "SEO Optimization: Include meta tags, alt text for images, and an XML sitemap."
+        },
+        {
+          text: "Responsive Design Guarantee: Ensure the website works perfectly on all devices."
+        },
+        {
+          text: "Free Hosting Setup: We offer assistance in setting up hosting for your website."
+        },
+      ]
     },
     {
       id: "3-6",
       label: "3-6 pages",
-      content:"9999 - 14999 tk"
+      price: "9999 - 14999 tk",
+      offer:[],
     },
     {
       id: "Larger",
       label: "Larger website",
-      content:"19999 - 49999 tk"
+      price: "19999 - 49999 tk",
+      offer:[],
     },
   ];
 
@@ -26,7 +46,16 @@ export default function PricingTbas() {
         {(item) => (
           <Tab key={item.id} title={item.label}>
             <Card>
-              <CardBody>{item.content}</CardBody>
+              <CardBody className="bg-darkPrimary text-secondary">
+                <p><strong>Price: </strong>{item.price}</p>
+                <p className="text-xl mt-5"><strong>Values :</strong></p>
+                <ul>
+                {item.offer.map(({text},i) => {
+                  return <li key={i} className='flex gap-4 mt-5  items-center text-secondary'><FaCheck className='w-[30px] text-primary'></FaCheck> {text}</li>
+                })}
+                  
+                </ul>
+              </CardBody>
             </Card>
           </Tab>
         )}

@@ -1,0 +1,11 @@
+div[data-slot="tabList"] {
+    background-color: #3f3f46;
+  }
+
+span[data-slot="cursor"] {
+    background-color: #FF014D;
+  }
+
+  Tab{
+   color: #FF014D;
+  }

@@ -29,7 +29,7 @@ const Home = () => {
       <Services/>
       <WhyUs/>
       <Banner onContactClick={scrollToContact}/>
-      {/* <ExpertiseSection/> */}
+      <ExpertiseSection/>
       <Contact ref={contactRef}/>
       <Footer/>
     </section>
