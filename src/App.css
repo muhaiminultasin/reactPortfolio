@@ -1,11 +1,18 @@
+
+
 div[data-slot="tabList"] {
     background-color: #3f3f46;
   }
 
-span[data-slot="cursor"] {
-    background-color: #FF014D;
+  div[data-slot="tab"] {
+    color:white;
   }
 
-  Tab{
-   color: #FF014D;
+  div[data-slot="tabContent"]{
+    color:#FF014D;
+  }
+
+span[data-slot="cursor"] {
+    background-color: #1F2125;
+
   }

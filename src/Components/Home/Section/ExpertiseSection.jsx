@@ -33,7 +33,7 @@ const ExpertiseSection = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-primary rounded-lg flex flex-col items-center justify-center w-[150px] h-[150px]"
+              className="bg-darkPrimary shadow-custom-dark rounded-lg flex flex-col items-center justify-center w-[150px] h-[150px]"
             >
               {skill.icon && (
                 <i
