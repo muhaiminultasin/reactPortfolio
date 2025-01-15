@@ -23,13 +23,14 @@ const FindMe = () => {
         <div className='flex w-fit md:w-full  mx-auto md:mx-0 gap-5 mt-5'>
             {
                 icons.map( ({img,link},i) => {
-                    return <div key={i} className='bg-darkPrimary w-[50px] h-[40px] flex justify-center items-center text-center shadow-custom-dark hover:shadow-lg cursor-pointer transition-all duration-300'>
-                    <a href={link} target='_blank'>
+                    return <a key={i} href={link} target='_blank'>
+                    <div  className='bg-darkPrimary w-[50px] h-[40px] flex justify-center items-center text-center shadow-custom-dark hover:shadow-lg cursor-pointer transition-all duration-300'>
+                    
                     <div>
                         {img}
                     </div>
-                    </a>
                 </div>
+                </a>
                 })
             }
         </div>
