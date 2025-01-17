@@ -49,7 +49,7 @@ function FAQ() {
 
   return (
     <section className="">
-      <h1 className="text-primary text-xl text-center font-bold lg:font-[700] w-full lg:w-[80%] mx-auto shadow-custom-dark py-2">আপনার ব্যবসার জন্য ল্যান্ডিং পেজ কেন গুরুত্বপূর্ণ?</h1>
+      <h1 className="bg-primary text-white text-xl text-center font-bold lg:font-[700] w-full lg:w-[80%] mx-auto shadow-custom-dark py-2">আপনার ব্যবসার জন্য ল্যান্ডিং পেজ কেন গুরুত্বপূর্ণ?</h1>
       <div className="flex flex-col-reverse gap-10 md:gap-0 md:grid md:grid-cols-1 lg:grid-cols-2 mt-10">
         <div className="">
             <div>

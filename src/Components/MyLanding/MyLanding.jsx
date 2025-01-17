@@ -4,7 +4,7 @@ import Importance from './section/Importance'
 
 const MyLanding = () => {
   return (
-    <section className='space-y-16 px-2 md:px-10 lg:px-20'>
+    <section className='fle flex-col space-y-32 '>
       <Hero/>
       <Importance/>
     </section>
