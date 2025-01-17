@@ -61,7 +61,7 @@ function FAQ() {
           </div>
         </div>
         <div>
-            <img src={Landing2} alt="Landing-img" className="md:h-screen " />
+            <img src={Landing2} alt="Landing-img" className="md:h-screen xl:h-[60vh]" />
         </div>
         </div>
         

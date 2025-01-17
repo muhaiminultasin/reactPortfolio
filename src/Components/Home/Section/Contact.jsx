@@ -72,6 +72,8 @@ const Contact = forwardRef(
               </div>
   
               <div className=' bg-darkPrimary shadow-custom-dark  p-5 rounded-md '>
+
+                <h1 className='text-2xl text-primary font-semibold'>Always here to help you.</h1>
                   <form action="" ref={form} >
                     
                     <div className='flex flex-col text-secondary'>
