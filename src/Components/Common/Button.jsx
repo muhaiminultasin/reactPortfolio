@@ -6,7 +6,7 @@ const Buttons = ({ name, className, onClick}) => {
   return (
     <div>
       <Button onClick={onClick} className={cn(
-          "px-3 py-1 bg-darkPrimary shadow-custom-dark hover:shadow-lg text-secondary mt-5 rounded-sm",
+          "px-3 py-1 bg-darkPrimary shadow-custom-dark hover:shadow-lg text-primary mt-5 rounded-sm",
           className
         )}>{name}</Button>
     </div>

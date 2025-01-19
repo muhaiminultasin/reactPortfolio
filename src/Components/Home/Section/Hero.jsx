@@ -1,7 +1,6 @@
 import { React, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import FindMe from "../../Common/FindMe";
-import SkillOn from "../../Common/SkillOn";
 import Buttons from "../../Common/Button";
 
 const Hero = () => {
@@ -26,7 +25,7 @@ const Hero = () => {
     <section
       id="hero"
       ref={heroRef}
-      className="w-screen px-[20px] md:px-[50px] lg:px-[80px] pt-[100px]  xl:pt-[160px] pb-[20px] grid grid-cols-1 lg:grid-cols-2"
+      className="w-full px-[20px] md:px-[50px] lg:px-[80px] pt-[100px]  xl:pt-[160px] pb-[20px] grid grid-cols-1 lg:grid-cols-2"
     >
       <div>
         <p className="text-base font-[300]  text-white">Hi, I'm </p>
@@ -47,7 +46,7 @@ const Hero = () => {
 
        
 
-        <div className=" mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-10 items-end">
+        <div className=" mt-10 md:mt-20 flex justify-between items-end sm:justify-start sm:gap-20">
           <FindMe />
           <Buttons name={"View My Work"} className='text-primary' onClick={""}/>
           

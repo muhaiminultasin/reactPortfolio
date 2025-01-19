@@ -1,16 +1,17 @@
 import React from "react";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaSass, FaJsSquare, FaReact, FaGithub } from "react-icons/fa";
 import PricingTbas from "../../Common/PricingTbas";
 
 const skills = [
-  { name: "HTML 5", icon: "fa-html5" },
-  { name: "CSS 3", icon: "fa-css3" },
-  { name: "BOOTSTRAP 5", icon: "fa-bootstrap" },
-  { name: "Tailwind CSS", icon: null },
-  { name: "SASS", icon: "fa-sass" },
-  { name: "JAVASCRIPT", icon: "fa-square-js" },
-  { name: "REACT JS", icon: "fa-react" },
-  { name: "NEXT JS", icon: null },
-  { name: "GITHUB", icon: "fa-github" },
+  { name: "HTML 5", icon: <FaHtml5 className="text-[40px] text-primary mb-2"/> },
+  { name: "CSS 3", icon: <FaCss3Alt className="text-[40px] text-primary mb-2"/> },
+  { name: "BOOTSTRAP 5", icon: <FaBootstrap className="text-[40px] text-primary mb-2"/> },
+  { name: "Tailwind CSS", icon: null }, // React Icons doesn't have Tailwind-specific icons
+  { name: "SASS", icon: <FaSass className="text-[40px] text-primary mb-2"/> },
+  { name: "JAVASCRIPT", icon: <FaJsSquare className="text-[40px] text-primary mb-2"/> },
+  { name: "REACT JS", icon: <FaReact className="text-[40px] text-primary mb-2"/> },
+  { name: "NEXT JS", icon: null }, // React Icons doesn't have Next.js-specific icons
+  { name: "GITHUB", icon: <FaGithub className="text-[40px] text-primary mb-2"/> },
 ];
 
 const ExpertiseSection = () => {
@@ -30,18 +31,17 @@ const ExpertiseSection = () => {
           Expertise
         </h2>
         <div className="flex flex-wrap justify-center gap-5">
-          {skills.map((skill, index) => (
+          {skills.map(({name, icon},index) => (
             <div
               key={index}
-              className="bg-darkPrimary shadow-custom-dark rounded-lg flex flex-col items-center justify-center w-[150px] h-[150px]"
-            >
-              {skill.icon && (
-                <i
-                  className={`fa-brands ${skill.icon} text-white text-[30px] md:text-[50px]`}
-                ></i>
-              )}
+              className="bg-darkPrimary shadow-custom-dark rounded-lg flex flex-col items-center justify-center w-[150px] h-[150px]">
+
+                <div className="w-[40px]">
+                  {icon}
+                </div>
+              
               <p className="text-white font-semibold text-[18px] md:text-[16px] text-center">
-                {skill.name}
+                {name}
               </p>
             </div>
           ))}
