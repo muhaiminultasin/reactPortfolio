@@ -16,7 +16,7 @@ const skills = [
 
 const ExpertiseSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row gap-10">
+    <section className="flex flex-col lg:flex-row">
       {/* Pricing Tabs Section */}
       <div className="lg:w-1/2 px-4 py-10 md:px-12">
       <h2 className=" text-secondary text-center lg:text-start font-semibold text-[25px] md:text-[36px]">
@@ -30,11 +30,11 @@ const ExpertiseSection = () => {
         <h2 className=" text-secondary text-center lg:text-start font-semibold text-[25px] md:text-[36px]">
           Expertise
         </h2>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 ">
           {skills.map(({name, icon},index) => (
             <div
               key={index}
-              className="bg-darkPrimary shadow-custom-dark rounded-lg flex flex-col items-center justify-center w-[150px] h-[150px]">
+              className="bg-darkPrimary shadow-custom-dark rounded-lg flex flex-col items-center justify-center w-[150px] h-[150px] mx-auto">
 
                 <div className="w-[40px]">
                   {icon}

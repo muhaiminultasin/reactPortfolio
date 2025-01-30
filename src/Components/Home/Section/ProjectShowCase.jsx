@@ -30,7 +30,7 @@ const ProjectShowCase = () => {
   const Projects= [
     {
       img:"img/Project1Theme.jpeg",
-      title:"degic web",
+      title:"Made man barber",
       type:"Landing page",
       link:"https://barber-shop-eight-sooty.vercel.app"
     },
