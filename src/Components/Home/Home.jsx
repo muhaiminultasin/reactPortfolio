@@ -20,11 +20,23 @@ const Home = () => {
       });
     }
   };
+
+
+  const portfolioRef = useRef(null);
+
+  const scrollToPortfolio = () => {
+    if (portfolioRef.current) {
+      portfolioRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   
   return (
     <section className=' overflow-y-hidden space-y-[100px] text-white cursor-default'>
-      <Hero/>
-      <ProjectShowCase/>
+      <Hero onViewMyWrok={scrollToPortfolio}/>
+      <ProjectShowCase ref={portfolioRef}/>
       <ServicesConent/>
       <Services/>
       <WhyUs/>

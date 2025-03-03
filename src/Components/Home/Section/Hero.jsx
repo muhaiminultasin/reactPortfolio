@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import FindMe from "../../Common/FindMe";
 import Buttons from "../../Common/Button";
 
-const Hero = () => {
+const Hero = ({ onViewMyWrok }) => {
   const heroRef = useRef();
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Hero = () => {
           TASIN MUHAIMINUL
         </h1>
         <h1 className="font-[500] text-[30px] text-white max-w-[650px] lg:max-w-[900px] xl:max-w-[1100px] leading-[40px]">
-            Front-end website developer with React.js 
+          Front-end website developer with React.js
         </h1>
         <p className="text-secondary mt-5">
           As a confident front-end developer, I craft stunning web interfaces
@@ -44,17 +44,16 @@ const Hero = () => {
           your ideas into standout digital experiences that drive success.
         </p>
 
-       
-
         <div className=" mt-10 md:mt-20 flex justify-between items-end sm:justify-start sm:gap-20">
           <FindMe />
-          <Buttons name={"View My Work"} className='text-primary' onClick={""}/>
-          
+          <Buttons
+            name={"View My Work"}
+            className="text-primary"
+            onClick={onViewMyWrok}
+          />
         </div>
       </div>
-      <div>
-
-      </div>
+      <div></div>
     </section>
   );
 };

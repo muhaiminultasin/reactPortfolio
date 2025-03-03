@@ -14,6 +14,7 @@ const FindMe = () => {
         },
         {
             img: <FaLinkedinIn className='text-primary '/>,
+            link: "https://www.linkedin.com/in/tasinmuhaiminul1/",
         },
     ]
 

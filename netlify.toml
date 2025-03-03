@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Content-Type = "application/javascript"
