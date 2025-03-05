@@ -27,13 +27,14 @@ const ProjectShowCase = forwardRef((props, ref) => {
     {
       img: 'img/Project1Theme.jpeg',
       title: 'Made man barber',
-      type: 'Landing page',
+      type: 'Landing page design',
       link: 'https://barber-shop-eight-sooty.vercel.app',
     },
     {
-      img: 'img/creative.png',
-      title: 'degic web',
-      type: 'Landing page',
+      img: '../../../../dist/img/myrestaurant.jpeg',
+      title: 'Restaurant website',
+      type: 'Website',
+      link:'https://coffeebean2.vercel.app/'
     },
     {
       img: 'img/creative.png',
@@ -54,8 +55,8 @@ const ProjectShowCase = forwardRef((props, ref) => {
               <div className='content bg-darkPrimary shadow-custom-dark p-5 rounded-xl hover:shadow-lg transition-all deration-300 text-secondary hover:text-primary'>
                 <img src={img} alt='' className='rounded-md' />
                 <div className='mt-5 '>
-                  <h1 className='font-[300]'>{title}</h1>
-                  <p>{type}</p>
+                  <h1 className='font-medium'>{title}</h1>
+                  <p className='text-sm'>{type}</p>
                 </div>
               </div>
             </a>
