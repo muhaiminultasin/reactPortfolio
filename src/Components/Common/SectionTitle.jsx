@@ -1,5 +1,5 @@
 import React from 'react'
-import cn from '../../../assets/cn/Cn'
+import cn from '../../../dist/cn/Cn'
 
 const SectionTitle = ({title,subTitle,titleClass, subTitleClass,className}) => {
   return (

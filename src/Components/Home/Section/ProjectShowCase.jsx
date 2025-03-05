@@ -1,8 +1,8 @@
 import { React, useEffect, forwardRef } from 'react';
 import { gsap } from 'gsap';
 import SectionTitle from '../../Common/SectionTitle';
-import project1 from '../../../../dist/img/Project1Theme.jpeg'
-import project2 from '../../../../dist/img/Project2Theme.jpeg'
+import project1 from '../../../../assets/img/Project1Theme.jpeg'
+import project2 from '../../../../assets/img/Project2Theme.jpeg'
 
 const ProjectShowCase = forwardRef((props, ref) => {
   useEffect(() => {
