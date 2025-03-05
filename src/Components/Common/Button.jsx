@@ -1,14 +1,19 @@
 import React from "react";
-import cn from "../../../dist/cn/Cn";
+import cn from "../../../lib/cn/Cn";
 import { Button } from "@nextui-org/react";
 
-const Buttons = ({ name, className, onClick}) => {
+const Buttons = ({ name, className, onClick }) => {
   return (
     <div>
-      <Button onClick={onClick} className={cn(
+      <Button
+        onClick={onClick}
+        className={cn(
           "px-3 py-1 bg-darkPrimary shadow-custom-dark hover:shadow-lg text-primary mt-5 rounded-sm",
           className
-        )}>{name}</Button>
+        )}
+      >
+        {name}
+      </Button>
     </div>
   );
 };
