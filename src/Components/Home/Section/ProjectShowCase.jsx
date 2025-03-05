@@ -31,7 +31,7 @@ const ProjectShowCase = forwardRef((props, ref) => {
       link: 'https://barber-shop-eight-sooty.vercel.app',
     },
     {
-      img: '../../../../dist/img/myrestaurant.jpeg',
+      img: 'img/myrestaurant.jpeg',
       title: 'Restaurant website',
       type: 'Website',
       link:'https://coffeebean2.vercel.app/'
