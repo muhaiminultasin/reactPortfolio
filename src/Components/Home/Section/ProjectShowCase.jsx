@@ -1,6 +1,8 @@
 import { React, useEffect, forwardRef } from 'react';
 import { gsap } from 'gsap';
 import SectionTitle from '../../Common/SectionTitle';
+import project1 from '../../../../dist/img/Project1Theme.jpeg'
+import project2 from '../../../../dist/img/Project2Theme.jpeg'
 
 const ProjectShowCase = forwardRef((props, ref) => {
   useEffect(() => {
@@ -25,13 +27,13 @@ const ProjectShowCase = forwardRef((props, ref) => {
 
   const Projects = [
     {
-      img: 'img/Project1Theme.jpeg',
+      img: project1,
       title: 'Made man barber',
       type: 'Landing page design',
       link: 'https://barber-shop-eight-sooty.vercel.app',
     },
     {
-      img: 'img/myrestaurant.jpeg',
+      img: project2,
       title: 'Restaurant website',
       type: 'Website',
       link:'https://coffeebean2.vercel.app/'
