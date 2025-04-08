@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import Hero from "./Section/Hero";
 import ProjectShowCase from "./Section/ProjectShowCase";
-import ServicesConent from "./Section/ServicesConent";
+import ServicesContent from "./Section/ServicesContent";
 import Services from "./Section/Services";
 import WhyUs from "./Section/WhyUs";
 import Banner from "./Section/Banner";
@@ -37,7 +37,7 @@ const Home = () => {
     <section className=' overflow-y-hidden space-y-[100px] text-white cursor-default'>
       <Hero onViewMyWrok={scrollToPortfolio}/>
       <ProjectShowCase ref={portfolioRef}/>
-      <ServicesConent/>
+      <ServicesContent/>
       <Services/>
       <WhyUs/>
       <Banner onContactClick={scrollToContact}/>

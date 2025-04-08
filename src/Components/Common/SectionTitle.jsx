@@ -1,13 +1,7 @@
 import React from "react";
 import cn from "../../../lib/cn/Cn";
 
-const SectionTitle = ({
-  title,
-  subTitle,
-  titleClass,
-  subTitleClass,
-  className,
-}) => {
+const SectionTitle = ({title,subTitle,titleClass,subTitleClass,className}) => {
   return (
     <div className={cn("flex flex-col", className)}>
       <p className={cn("text-[14px] text-primary", subTitleClass)}>

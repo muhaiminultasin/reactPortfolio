@@ -8,7 +8,7 @@ const Buttons = ({ name, className, onClick }) => {
       <Button
         onClick={onClick}
         className={cn(
-          "px-3 py-1 bg-darkPrimary shadow-custom-dark hover:shadow-lg text-primary mt-5 rounded-sm",
+          "px-3 py-1 bg-darkPrimary shadow-custom-dark hover:shadow-lg text-primary font-bold mt-5 rounded-sm",
           className
         )}
       >

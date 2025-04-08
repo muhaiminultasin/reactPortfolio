@@ -153,7 +153,7 @@ const Contact = forwardRef((props, ref) => {
               />
 
               <label htmlFor="message" className="mt-4">
-                Message
+                Message:
               </label>
               <textarea
                 name="message"
