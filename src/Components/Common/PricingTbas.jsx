@@ -5,23 +5,23 @@ export default function PricingTbas() {
   let tabs = [
     {
       id: "1-3",
-      label: "1-3 pages",
-      price: "5999 - 9999 tk",
+      label: "Landing page",
+      price: "2000 - 5000 tk only",
       offer:[
         {
-          text: "Free Hosting Setup: We offer assistance in setting up hosting for your website."
+          text: "Free Hosting Setup: We offer assistance in setting up hosting for your Landing page."
         },
         {
           text: "One Free Revision: Allow one round of edits at no additional cost."
         },
         {
-          text: "SEO Optimization: Include meta tags, alt text for images, and an XML sitemap."
+          text: "SEO Optimization: Include meta tags, alt text for images, and an XML sitemap. It helps in organic reach"
         },
         {
           text: "Responsive Design Guarantee: Ensure the website works perfectly on all devices."
         },
         {
-          text: "Free Hosting Setup: We offer assistance in setting up hosting for your website."
+          text: "Setup Facebook pixel or Google analitycs for retargeting users"
         },
       ]
     },

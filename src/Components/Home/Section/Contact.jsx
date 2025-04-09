@@ -90,10 +90,17 @@ const Contact = forwardRef((props, ref) => {
           </p>
 
           <p className="text-secondary text-[14px] mt-5">
-            Phone: <span>01824427215</span>
+            Phone: <span>01794382332</span>
           </p>
           <p className="text-secondary text-[14px]">
-            Whatsapp: <span>01794382332</span>
+            WhatsApp:{" "}
+            <a
+              href="https://wa.me/8801794382332"
+              target="_blank"
+              className=" underline"
+            >
+              01794382332
+            </a>
           </p>
           <p className="text-secondary text-[14px] mt-5">
             Email: <span>tasinmuhaiminul@gmail.com</span>
@@ -105,7 +112,7 @@ const Contact = forwardRef((props, ref) => {
 
         <div className=" bg-darkPrimary shadow-custom-dark  p-5 rounded-md ">
           <h1 className="text-2xl text-primary font-semibold">
-          Let us know how to get back to you
+            Let me know how to get back to you
           </h1>
           <form action="" ref={form}>
             <div className="flex flex-col text-secondary">

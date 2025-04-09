@@ -1,10 +1,19 @@
-import { React, useEffect, useRef } from "react";
+import { React, useEffect, useRef,forwardRef } from "react";
 import { gsap } from "gsap";
 import FindMe from "../../Common/FindMe";
 import Buttons from "../../Common/Button";
 
-const Hero = ({ onViewMyWrok }) => {
+const Hero = forwardRef((props, ref ) => {
   const heroRef = useRef();
+
+  const setRefs = (el) => {
+    heroRef.current = el;
+    if (typeof ref === "function") {
+      ref(el);
+    } else if (ref) {
+      ref.current = el;
+    }
+  };
 
   useEffect(() => {
     const context = gsap.context(() => {
@@ -24,7 +33,7 @@ const Hero = ({ onViewMyWrok }) => {
   return (
     <section
       id="hero"
-      ref={heroRef}
+      ref={setRefs}
       className="w-full px-[20px] md:px-[50px] lg:px-[80px] pt-[100px]  xl:pt-[160px] pb-[20px] grid grid-cols-1 lg:grid-cols-2"
     >
       <div>
@@ -49,13 +58,13 @@ const Hero = ({ onViewMyWrok }) => {
           <Buttons
             name={"View My Work"}
             className="text-primary"
-            onClick={onViewMyWrok}
+            onClick={props.onClick}
           />
         </div>
       </div>
       <div></div>
     </section>
   );
-};
+});
 
 export default Hero;

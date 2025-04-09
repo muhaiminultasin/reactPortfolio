@@ -27,11 +27,11 @@ const WhyUs = () => {
     }, []);
 
     const list = [
-        {text:"I focus on every detail to ensure your website is visually appealing and user-friendly."},
-        {text:"Free domain for one year"},
-        {text:"Fast load times and performance optimization for a smooth user experience."},
-        {text:"Collaborative approach, working closely with teams and clients to understand their needs."},
-        {text:"I have a track record of not just meeting deadlines, but exceeding expectations while staying within budget."},
+        {text:"Facebook Pixel Setup for retargeting."},
+        {text:"Ongoing maintenance packages"},
+        {text:"Google Analytics integration"},
+        {text:"Copywriting services for landing page content"},
+        // {text:"I have a track record of not just meeting deadlines, but exceeding expectations while staying within budget."},
     ]
 
   return (

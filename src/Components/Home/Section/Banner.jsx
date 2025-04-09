@@ -2,7 +2,7 @@ import {React,useEffect, useRef} from 'react';
 import {gsap} from "gsap";
 import Buttons from '../../Common/Button'
 
-const Banner = ({onContactClick}) => {
+const Banner = ({onClick}) => {
 
   const bannerRef = useRef();
 
@@ -31,7 +31,7 @@ const Banner = ({onContactClick}) => {
       <div id='bannerItems' className='text-center bg-darkPrimary shadow-custom-dark rounded-xl px-5 py-10'>
       <h1 className='text-[25px] font-[700] text-secondary'>As a proficient front-end developer, I focus on creating responsive, intuitive, and visually appealing websites that provide outstanding user experiences.
       </h1>
-      <Buttons onClick={onContactClick} className="bg-darkPrimary text-primary rounded-sm" name="Contact Me"></Buttons>
+      <Buttons onClick={onClick} className="bg-darkPrimary text-primary rounded-sm" name="Get a free consultant"></Buttons>
       </div>
     </section>
   )
