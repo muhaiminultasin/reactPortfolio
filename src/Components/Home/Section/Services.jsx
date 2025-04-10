@@ -56,8 +56,8 @@ const Services = forwardRef((props, ref) => {
   return (
     <section
       id="services"
-      ref={setRefs} // Now using 'setRefs' for combined ref functionality
-      className="px-[20px] md:px-[50px] lg:px-[80px]"
+      ref={setRefs} 
+      className="px-[20px] md:px-[50px] lg:px-[80px] overflow-y-hidden"
     >
       <SectionTitle title={"What I Do"} subTitle={"FEATURES"} />
 

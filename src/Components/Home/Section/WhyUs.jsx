@@ -35,7 +35,7 @@ const WhyUs = () => {
     ]
 
   return (
-    <section ref={benefitsRef} className='px-[20px] md:px-[50px] lg:px-[80px]  items-center '>
+    <section ref={benefitsRef} className='px-[20px] md:px-[50px] lg:px-[80px]  items-center overflow-y-hidden'>
 
         <SectionTitle title={"Why Choose Me"}/>
         

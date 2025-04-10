@@ -18,7 +18,7 @@ const ExpertiseSection = forwardRef((props, ref) => {
   return (
     <section
     ref={ref}
-     className="flex flex-col lg:flex-row">
+     className="flex flex-col lg:flex-row overflow-y-hidden">
       {/* Pricing Tabs Section */}
       <div className="lg:w-1/2 px-4 py-10 md:px-12">
       <h2 className=" text-secondary text-center lg:text-start font-semibold text-[25px] md:text-[36px]">

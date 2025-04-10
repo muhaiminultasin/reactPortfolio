@@ -34,7 +34,7 @@ const Hero = forwardRef((props, ref ) => {
     <section
       id="hero"
       ref={setRefs}
-      className="w-full px-[20px] md:px-[50px] lg:px-[80px] pt-[100px]  xl:pt-[160px] pb-[20px] grid grid-cols-1 lg:grid-cols-2"
+      className="w-full px-[20px] md:px-[50px] lg:px-[80px] pt-[80px]  xl:pt-[100px] pb-[20px] grid grid-cols-1 lg:grid-cols-2 overflow-y-hidden"
     >
       <div>
         <p className="text-base font-[300]  text-white">Hi, I'm </p>

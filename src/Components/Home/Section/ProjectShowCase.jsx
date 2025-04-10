@@ -46,7 +46,7 @@ const ProjectShowCase = forwardRef((props, ref) => {
   ];
 
   return (
-    <section ref={ref} className='px-[20px] md:px-[50px] lg:px-[80px] text-center'>
+    <section ref={ref} className='px-[20px] md:px-[50px] lg:px-[80px] text-center overflow-y-hidden'>
       <div id='intro'>
         <SectionTitle title={'My Portfolio'} subTitle={'VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK'} />
       </div>

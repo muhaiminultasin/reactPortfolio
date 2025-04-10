@@ -27,7 +27,7 @@ const Banner = ({onClick}) => {
   },[]);
 
   return (
-    <section ref={bannerRef} className='px-[20px] md:px-[80px] '>
+    <section ref={bannerRef} className='px-[20px] md:px-[80px] overflow-y-hidden'>
       <div id='bannerItems' className='text-center bg-darkPrimary shadow-custom-dark rounded-xl px-5 py-10'>
       <h1 className='text-[25px] font-[700] text-secondary'>As a proficient front-end developer, I focus on creating responsive, intuitive, and visually appealing websites that provide outstanding user experiences.
       </h1>

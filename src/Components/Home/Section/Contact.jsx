@@ -64,7 +64,7 @@ const Contact = forwardRef((props, ref) => {
   return (
     <section
       ref={ref}
-      className="px-[20px] md:px-[50px] lg:px-[80px]  text-center pb-[100px]"
+      className="px-[20px] md:px-[50px] lg:px-[80px]  text-center pb-[100px] overflow-y-hidden"
     >
       <SectionTitle title={"Contact Me"} subTitle={"CONTACT"} />
 
